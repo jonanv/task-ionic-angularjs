@@ -5,6 +5,7 @@
 [![NPM Version][npm-badge]][npm-url]
 [![Node JS][node-badge]][node-url]
 [![Angular JS][angular-badge]][angular-url]
+[![Ionic][ionic-badge]][ionic-url]
 [![License][license-badge]][license-url]
 
 # Site
@@ -104,5 +105,7 @@ http-server -o
 [node-url]: https://nodejs.org/download/release/v10.16.3/
 [angular-badge]: https://img.shields.io/badge/angular--CLI-v8.1.3-brightgreen
 [angular-url]: https://angular.io/cli/
+[ionic-badge]: https://img.shields.io/badge/ionic-v5.4.15-brightgreen
+[ionic-url]: https://ionicframework.com/
 [license-badge]: https://img.shields.io/badge/license-MIT-green.svg
 [license-url]: https://opensource.org/licenses/MIT
