@@ -1,9 +1,10 @@
 export class ListItem {
 
     descripcion: string;
-    completado: string;
+    completado: boolean;
 
     constructor(descripcion: string) {
         this.descripcion = descripcion;
+        this.completado = false;
     }
 }
