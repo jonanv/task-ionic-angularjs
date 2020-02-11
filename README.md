@@ -63,16 +63,18 @@ or
 ```javascript
 ng generate component components/artist --spec=false -is
 ```
+-->
 
 # Create service without spec.ts
 ```javascript
-ng g s services/spotify --spec=false
+ionic g s services/wishes --spec=false
 ```
 or
 ```javascript
-ng generate service services/spotify --spec=false
+ionic generate service services/wishes --spec=false
 ```
 
+<!--
 # Create pipe without spec.ts
 ```javascript
 ng g p pipes/noimage --spec=false
