@@ -9,6 +9,11 @@ export class WishesService {
   lists: List[] = [];
 
   constructor() {
-    console.log("Servicio inicializado")
+    const list1 = new List('Recolectar piedras del infinito');
+    const list2 = new List('Heroes a desaparecer');
+
+    this.lists.push(list1, list2);
+
+    console.log(this.lists);
   }
 }
