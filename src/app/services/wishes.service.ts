@@ -10,10 +10,10 @@ export class WishesService {
 
   constructor() {
     const list1 = new List('Recolectar piedras del infinito');
-    const list2 = new List('Heroes a desaparecer');
+    const list2 = new List('Héroes a desaparecer');
 
     this.lists.push(list1, list2);
 
-    console.log(this.lists);
+    // console.log(this.lists);
   }
 }
