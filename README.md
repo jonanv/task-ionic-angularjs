@@ -85,7 +85,7 @@ ng generate pipe pipes/noimage --spec=false
 
 # Create project build to production
 ```javascript
-ng build --prod
+ng build --prod=true
 ``` -->
 
 # Server local
