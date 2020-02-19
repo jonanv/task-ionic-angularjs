@@ -43,17 +43,17 @@ ionic start NameProject tabs
 ```javascript
 ionic serve -o
 ```
-<!-- 
-# Create component without spec.ts
+
+# Create page - module without spec.ts
 ```javascript
-ng g c components/shared/navbar --spec=false
+ionic g p pages/add --spec=false
 ```
 or
 
 ```javascript
-ng generate component components/shared/navbar --spec=false
+ionic generate page pages/add --spec=false
 ```
-
+<!-- 
 # Create component without spec.ts and .css
 ```javascript
 ng g c components/artist --spec=false -is
