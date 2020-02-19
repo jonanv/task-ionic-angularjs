@@ -46,7 +46,7 @@ ionic serve -o
 
 # Create page - module without spec.ts
 ```javascript
-ionic g p pages/add --spec=false
+ionic g page pages/add --spec=false
 ```
 or
 
