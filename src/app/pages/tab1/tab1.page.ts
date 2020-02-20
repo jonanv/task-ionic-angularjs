@@ -17,8 +17,8 @@ export class Tab1Page {
   }
 
   addList() {
-    // this.router.navigate(['/add']);
-    this.router.navigateByUrl('/add');
+    // this.router.navigate(['/tabs/tab1/add']);
+    this.router.navigateByUrl('/tabs/tab1/add');
   }
 
 }
