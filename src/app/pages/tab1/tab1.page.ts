@@ -44,6 +44,7 @@ export class Tab1Page {
           }
           else {
             // TODO: Crear la lista
+            this.wishesService.createlist(data.titulo);
           }
         }
       }]
