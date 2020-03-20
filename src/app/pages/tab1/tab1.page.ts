@@ -43,7 +43,6 @@ export class Tab1Page {
             return;
           }
           else {
-            // TODO: Crear la lista
             this.wishesService.createlist(data.titulo);
           }
         }
