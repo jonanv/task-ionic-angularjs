@@ -29,24 +29,26 @@ export class Tab1Page {
         type: 'text',
         placeholder: 'Nombre de la lista'
       }],
-      buttons: [{
-        text: 'Cancelar',
-        role: 'cancel',
-        handler: () => {
-          console.log('Cancelar');
-        }
-      },
-      {
-        text: 'Crear',
-        handler: (data) => {
-          if (data.titulo.length === 0) {
-            return;
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancelar');
           }
-          else {
-            this.wishesService.createlist(data.titulo);
+        },
+        {
+          text: 'Crear',
+          handler: (data) => {
+            if (data.titulo.length === 0) {
+              return;
+            }
+            else {
+              this.wishesService.createlist(data.titulo);
+            }
           }
         }
-      }]
+      ]
     });
 
     await alert.present();
