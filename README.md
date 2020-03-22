@@ -74,6 +74,15 @@ or
 ionic generate service services/wishes --spec=false
 ```
 
+# Create module
+```javascript
+ionic g m components
+```
+or
+```javascript
+ionic generate module components
+```
+
 <!--
 # Create pipe without spec.ts
 ```javascript
