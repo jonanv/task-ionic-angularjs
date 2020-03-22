@@ -53,17 +53,16 @@ or
 ```javascript
 ionic generate page pages/add --spec=false
 ```
-<!-- 
+
 # Create component without spec.ts and .css
 ```javascript
-ng g c components/artist --spec=false -is
+ng g c components/lists --spec=false -is
 ```
 or
 
 ```javascript
-ng generate component components/artist --spec=false -is
+ng generate component components/lists --spec=false -is
 ```
--->
 
 # Create service without spec.ts
 ```javascript
