@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { WishesService } from '../../services/wishes.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { List } from '../../models/list.model';
 
 @Component({
   selector: 'app-tab1',
@@ -19,9 +20,6 @@ export class Tab1Page {
   }
 
   async addList() {
-    // this.router.navigate(['/tabs/tab1/add']);
-    // this.router.navigateByUrl('/tabs/tab1/add');
-
     const alert = await this.alertController.create({
       header: 'Alert',
       inputs: [{
@@ -48,13 +46,16 @@ export class Tab1Page {
 
             // this.router.navigate(['/tabs/tab1/add']);
             this.router.navigateByUrl(`/tabs/tab1/add/${ listId }`);
-
           }
         }
       ]
     });
 
     await alert.present();
+  }
+
+  selectList(list: List) {
+    this.router.navigateByUrl(`/tabs/tab1/add/${ list.id }`);
   }
 
 }

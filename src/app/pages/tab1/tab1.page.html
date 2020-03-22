@@ -8,8 +8,8 @@
 
 <ion-content color="dark">
     <ion-list color="dark">
-        <ion-item *ngFor="let item of wishesService.lists" detail color="dark">
-            <ion-label>{{ item.titulo }}</ion-label>
+        <ion-item *ngFor="let list of wishesService.lists" detail color="dark" (click)="selectList(list)">
+            <ion-label>{{ list.titulo }}</ion-label>
         </ion-item>
     </ion-list>
 
