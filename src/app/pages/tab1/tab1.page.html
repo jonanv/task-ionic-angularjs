@@ -10,13 +10,7 @@
 
     <app-lists></app-lists>
 
-    <ion-list color="dark">
-        <ion-item *ngFor="let list of wishesService.lists" detail color="dark" (click)="selectList(list)">
-            <ion-label>{{ list.titulo }}</ion-label>
-            <ion-note slot="end" color="tertiary">{{ list.items.length }} items</ion-note>
-        </ion-item>
-    </ion-list>
-
+    <!-- Fab para el icono de add en la pagina tab1 -->
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
         <ion-fab-button color="tertiary" (click)="addList()">
             <ion-icon name="add"></ion-icon>
