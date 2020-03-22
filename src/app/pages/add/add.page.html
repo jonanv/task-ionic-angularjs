@@ -19,11 +19,11 @@
     </ion-list>
 
     <ion-list>
-        <ion-item-sliding *ngFor="let item of list.items; let i = index" class="animated fadeInDown">
+        <ion-list-header color="dark" *ngIf="list.items.length > 0">
+            <ion-label>Tareas por hacer</ion-label>
+        </ion-list-header>
 
-            <ion-list-header color="dark">
-                <ion-label>Tareas por hacer</ion-label>
-            </ion-list-header>
+        <ion-item-sliding *ngFor="let item of list.items; let i = index" class="animated fadeInDown">
 
             <ion-item color="dark">
                 <ion-checkbox slot="start" color="tertiary" [(ngModel)]="item.completado" (ionChange)="changeCheck( item )"></ion-checkbox>
