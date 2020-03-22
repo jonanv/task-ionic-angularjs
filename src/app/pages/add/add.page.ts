@@ -33,5 +33,6 @@ export class AddPage implements OnInit {
     const newItem = new ListItem(this.nameItem);
     this.list.items.push(newItem);
     this.nameItem = '';
+    this.wishesService.saveStorage();
   }
 }
