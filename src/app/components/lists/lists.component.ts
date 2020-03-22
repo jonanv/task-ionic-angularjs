@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { WishesService } from '../../services/wishes.service';
 import { Router } from '@angular/router';
 import { List } from '../../models/list.model';
@@ -10,6 +10,8 @@ import { List } from '../../models/list.model';
 })
 export class ListsComponent implements OnInit {
 
+  @Input() terminated = true;
+
   constructor(
     public wishesService: WishesService,
     private router: Router
@@ -18,7 +20,12 @@ export class ListsComponent implements OnInit {
   ngOnInit() {}
 
   selectList(list: List) {
-    this.router.navigateByUrl(`/tabs/tab1/add/${ list.id }`);
+    if(this.terminated) {
+      this.router.navigateByUrl(`/tabs/tab2/add/${ list.id }`);
+    }
+    else {
+      this.router.navigateByUrl(`/tabs/tab1/add/${ list.id }`);
+    }
   }
 
 }
