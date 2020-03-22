@@ -43,9 +43,12 @@ export class Tab1Page {
             if (data.titulo.length === 0) {
               return;
             }
-            else {
-              this.wishesService.createlist(data.titulo);
-            }
+
+            const listId = this.wishesService.createlist(data.titulo);
+
+            // this.router.navigate(['/tabs/tab1/add']);
+            this.router.navigateByUrl(`/tabs/tab1/add/${ listId }`);
+
           }
         }
       ]
