@@ -28,4 +28,8 @@ export class ListsComponent implements OnInit {
     }
   }
 
+  deleteList(list: List) {
+    this.wishesService.deleteList(list);
+  }
+
 }
