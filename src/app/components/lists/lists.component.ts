@@ -11,7 +11,7 @@ import { AlertController, IonList } from '@ionic/angular';
 })
 export class ListsComponent implements OnInit {
 
-  @ViewChild(IonList) list: IonList;
+  @ViewChild( IonList, {static: false} ) list: IonList;
   @Input() terminated = true;
 
   constructor(
