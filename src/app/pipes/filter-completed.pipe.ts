@@ -1,12 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { List } from '../models/list.model';
 
 @Pipe({
-  name: 'filterCompleted'
+  name: 'filterCompleted',
+  pure: false
 })
 export class FilterCompletedPipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): any {
-    return null;
+  transform(lists: List[], completed: boolean = true): List[] {
+    return lists.filter(list => list.terminada === completed);
   }
 
 }
