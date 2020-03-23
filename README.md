@@ -82,15 +82,15 @@ or
 ionic generate module components
 ```
 
-<!--
 # Create pipe without spec.ts
 ```javascript
-ng g p pipes/noimage --spec=false
+ng g p pipes/filterCompleted --spec=false
 ```
 ```javascript
-ng generate pipe pipes/noimage --spec=false
+ng generate pipe pipes/filterCompleted --spec=false
 ```
 
+<!--
 # Create project build to production
 ```javascript
 ng build --prod=true
