@@ -112,7 +112,7 @@ http-server -o
 [npm-badge]: https://img.shields.io/badge/npm-v6.13.4-brightgreen.svg
 [npm-url]: https://www.npmjs.com
 [node-badge]: https://img.shields.io/badge/nodejs-v10.18.1-brightgreen
-[node-url]: https://nodejs.org/download/release/v10.16.3/
+[node-url]: https://nodejs.org/download/release/v10.18.1/
 [angular-badge]: https://img.shields.io/badge/angular--CLI-v8.1.3-brightgreen
 [angular-url]: https://angular.io/cli/
 [ionic-badge]: https://img.shields.io/badge/ionic-v5.4.15-brightgreen
